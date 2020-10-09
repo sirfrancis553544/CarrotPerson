@@ -393,7 +393,8 @@ h6 {
   gap: 20px;
   justify-content: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: var(--mainText);
 }
 
@@ -403,7 +404,7 @@ h6 {
   gap: 0px;
  justify-content: center;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   color: var(--mainText);
 }
 
