@@ -13,6 +13,7 @@
   --previewShadow: #f0ead6;
 
   --buttonColor: black;
+  --red: red;
 }
 
 html,
@@ -23,6 +24,12 @@ body {
 
 body * {
   transition: 0.3s;
+}
+header {
+  background-color: var(--secondaryColor);
+  padding: 45px 0;
+  color: var(--mainText);
+  text-align: center;
 }
 
 h1,
@@ -50,6 +57,20 @@ textarea {
 a {
   text-decoration: none;
   color: #17a2b8;
+}
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.footer a:hover{
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 ul {
@@ -79,6 +100,17 @@ h5 {
 h6 {
   font-size: 16px;
 }
+
+.red {
+  color: var(--red);
+}
+
+.red:hover{
+  animation: color-rotate 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 
 .s1 {
   background-color: var(--mainColor);
@@ -289,10 +321,11 @@ h6 {
 
 .about-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
   padding-bottom: 50px;
   padding-top: 50px;
   gap: 30px;
+  margin: 0 10%;
 }
 
 #skills {
@@ -304,7 +337,7 @@ h6 {
 #social_img {
   width: 100%;
 }
-
+/* 
 .social-links {
   align-content: center;
   text-align: center;
@@ -312,7 +345,7 @@ h6 {
 
 .social-links a {
   margin: 10%;
-}
+} */
 
 .post-wrapper {
   display: grid;
@@ -327,25 +360,30 @@ h6 {
   -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
-
+.post:hover {
+  transform: scale(1.05);
+  transition: all ease 100ms;
+  cursor: pointer;
+}
 .thumbnail {
   width: 100%;
-  height: 180px;
+  /* height: 100%; */
   object-fit: cover;
+  transition: transform 0.1s;
 }
-
 .post-preview {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 15px;
 }
 
 .post-title {
   color: black;
+  /* color: var(--mainColor); */
   margin: 0;
 }
 
 .post-intro {
-  color: #4b5156;
+  color: var(--mainText);
   font-size: 14px;
 }
 
@@ -402,12 +440,11 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20%);
   gap: 0px;
- justify-content: center;
+  justify-content: center;
   text-align: center;
   padding-bottom: 60px;
   color: var(--mainText);
 }
-
 
 @media screen and (max-width: 1100px) {
   .main-container {

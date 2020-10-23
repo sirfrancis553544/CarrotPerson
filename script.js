@@ -40,4 +40,18 @@ var year = new Date();
 
 document.getElementById(
   "thisYear"
-).innerHTML = `<div> © ${year.getFullYear()} </div>`;
+).innerHTML = `<div> © ${year.getFullYear()} Daniel Francis</div>`;
+
+
+today = new Date();
+var countDown = new Date(today.getFullYear(), 11, 23);
+if (today.getMonth() == 11 && today.getDate() > 25) {
+  countDown.setFullYear(countDown.getFullYear() + 1);
+}
+var one_day = 1000 * 60 * 60 * 24;
+var days = 99;
+document.getElementById("countdown").innerHTML = `<h1> Day <strong class="red">${Math.ceil(
+  (days - (countDown.getTime() - today.getTime()) / one_day) 
+)}</strong> of my 100 days of coding challenge </h1>`;
+
+
