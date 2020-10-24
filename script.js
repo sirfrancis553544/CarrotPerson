@@ -52,6 +52,8 @@ var one_day = 1000 * 60 * 60 * 24;
 var days = 99;
 document.getElementById("countdown").innerHTML = `<h1> Day <strong class="red">${Math.ceil(
   (days - (countDown.getTime() - today.getTime()) / one_day) 
-)}</strong> of my 100 days of coding challenge </h1>`;
+)}</strong> of my 100 days of coding challenge  <a target="_blank" href="https://github.com/sirfrancis553544/oneHundredDaysOfCoding">
+<i class="fa fa-github" style="font-size: 48px"></i>
+</a></h1>`;
 
 

@@ -26,10 +26,11 @@ body * {
   transition: 0.3s;
 }
 header {
-  background-color: var(--secondaryColor);
+  /* background-color: var(--secondaryColor); */
   padding: 45px 0;
   color: var(--mainText);
   text-align: center;
+  background-color: var(--mainColor);
 }
 
 h1,
@@ -462,5 +463,102 @@ h6 {
   }
   .right-column {
     justify-content: center;
+  }
+}
+
+
+
+/*display grid */
+
+
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+body {
+  margin: 0;
+  
+}
+.container {
+  display: grid;
+  height: 100vh; /* height of the entire screen*/
+  /* fr is for grid layout turns the everything into colums  */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main sidebar"
+    "main main main sidebar"
+    "main main main sidebar"
+    "main main main sidebar"
+    "main main main sidebar"
+    "content1 content2 content3 sidebar"
+    "footer3 footer3 footer3 sidebar"
+    
+    ;
+  grid-gap: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+nav {
+  background-color: aqua;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+main {
+  background-color: aquamarine;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  word-break: break-all;
+}
+.work {
+  width: 90%;
+  max-width: 620px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+#sidebar {
+  background-color: blueviolet;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#content1 {
+  background-color: cyan;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#content2 {
+  background-color: rgb(96, 173, 173);
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#content3 {
+  background-color: rgb(46, 75, 75);
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+#footer3 {
+  background-color: darkcyan;
+  grid-area: footer3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 550px) {
+  /* one column wide so 1fr */
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: "nav" "sidebar" "main" "content1" "content2" "content3" "footer3";
   }
 }
