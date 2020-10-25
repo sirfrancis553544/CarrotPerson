@@ -20,14 +20,13 @@
     <link rel="stylesheet" href="default.css" />
     <link id="theme-style" rel="stylesheet" href="" />
     <title>Daniel Francis</title>
-    
   </head>
   <body>
     <section class="s1">
       <div class="main-container">
         <div class="greeting-wrapper">
           <h1>Hi, I'm Daniel Francis</h1>
-          
+
           <!-- TODO change font family -->
         </div>
 
@@ -82,7 +81,6 @@
     <header>
       <div id="countdown">
         <!-- <h1> Day `${36}` of my 100 days of coding challenge</h1> -->
-   
       </div>
     </header>
     <section class="s2">
@@ -208,21 +206,33 @@
       <div id="contact" class="main-container">
         <a href=""></a>
         <h3 style="text-align: center">Get In Touch</h3>
-        <!-- TODO: submit Form validation needed -->
+      
         <form id="contact-form">
           <a name="contact"></a>
 
-          <label>Name</label>
-          <input class="input-field" type="text" name="name" />
+          <div class="form-control">
+            <label>Name</label>
+            <input class="input-field" id="name" type="text" name="name" />
+            <small>Error message</small>
+          </div>
 
-          <label>Subject</label>
-          <input class="input-field" type="text" name="subject" />
+          <div class="form-control">
+            <label>Subject</label>
+            <input class="input-field" id="subject" type="text" name="subject" />
+            <small>Error message</small>
+          </div>
 
-          <label>Email</label>
-          <input class="input-field" type="text" name="email" />
+          <div class="form-control">
+            <label>Email</label>
+            <input class="input-field" id="email" type="text" name="email" />
+            <small>Error message</small>
+          </div>
 
-          <label>Message</label>
-          <textarea class="input-field" name="message"></textarea>
+          <div class="form-control">
+            <label>Message</label>
+            <textarea class="input-field" id="message" name="message"></textarea>
+            <small>Error message</small>
+          </div>
 
           <input id="submit-btn" type="submit" value="Send" />
         </form>
@@ -235,10 +245,7 @@
             <div><a href="#about">About</a></div>
             <div><a href="#portfolio">Portfolio</a></div>
             <div>
-              <a
-                href="www.linkedin.com/in/daniel-francis-nF1t"
-                >LinkedIn</a
-              >
+              <a href="www.linkedin.com/in/daniel-francis-nF1t">LinkedIn</a>
             </div>
             <div>
               <a href="https://github.com/sirfrancis553544">GitHub</a>
@@ -251,5 +258,6 @@
       </div>
     </section>
     <script src="script.js"></script>
+    <script src="validation.js"</script></script>
   </body>
 </html>
