@@ -81,4 +81,3 @@ form.addEventListener("submit", function (e) {
 });
 
 
-document.getElementsByClassName("form-control").innerHTML = `<div data - netlify="true"> </div>`;

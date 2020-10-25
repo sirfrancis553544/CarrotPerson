@@ -22,6 +22,13 @@
     <title>Daniel Francis</title>
   </head>
   <body>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="subject" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+
     <section class="s1">
       <div class="main-container">
         <div class="greeting-wrapper">
@@ -207,7 +214,7 @@
         <a href=""></a>
         <h3 style="text-align: center">Get In Touch</h3>
       
-        <form id="contact-form" class="form"  data-netlify="true">
+        <form id="contact-form" name="contact-form" class="form"  data-netlify="true">
           <a name="contact"></a>
 
           <div class="form-control">
@@ -236,6 +243,9 @@
 
           <input id="submit-btn" type="submit" value="Send" />
         </form>
+
+        
+
       </div>
     </section>
     <section class="s1">
