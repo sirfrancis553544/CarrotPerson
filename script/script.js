@@ -4,11 +4,7 @@ if (theme == null) {
 } else {
   setTheme(theme);
 }
-/* 
-TODO: submit Form validation needed
-TODO: Add Images of past works 
-TODO: Add gallery of images in about me section
-*/
+
 
 let themeDots = document.getElementsByClassName("theme-dot");
 
@@ -21,16 +17,16 @@ for (var i = 0; themeDots.length > i; i++) {
 
 function setTheme(mode) {
   if (mode == "light") {
-    document.getElementById("theme-style").href = "default.css";
+    document.getElementById("theme-style").href = "CSS/default.css";
   }
   if (mode == "blue") {
-    document.getElementById("theme-style").href = "blue.css";
+    document.getElementById("theme-style").href = "CSS/blue.css";
   }
   if (mode == "green") {
-    document.getElementById("theme-style").href = "green.css";
+    document.getElementById("theme-style").href = "CSS/green.css";
   }
   if (mode == "purple") {
-    document.getElementById("theme-style").href = "purple.css";
+    document.getElementById("theme-style").href = "CSS/purple.css";
   }
 
   localStorage.setItem("theme", mode);
