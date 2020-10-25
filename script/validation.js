@@ -79,3 +79,6 @@ form.addEventListener("submit", function (e) {
   checkEmail(email);
   
 });
+
+
+document.getElementsByClassName("form-control").innerHTML = `<div data - netlify="true"> </div>`;
