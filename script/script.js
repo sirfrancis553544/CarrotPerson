@@ -34,7 +34,7 @@ function setTheme(mode) {
 
 var year = new Date();
 
-document.getElementById("thisYear").innerHTML = `<div> © ${year.getFullYear()} Daniel Francis</div>`;
+document.getElementById("thisYear").innerHTML = `<div> <strong>©</strong> ${year.getFullYear()} Daniel Francis</div>`;
 
 
 today = new Date();
