@@ -38,7 +38,7 @@ document.getElementById("thisYear").innerHTML = `<div> <strong>©</strong> ${yea
 
 
 today = new Date();
-var countDown = new Date(today.getFullYear(), 11, 23);
+var countDown = new Date(today.getFullYear(), 12, 2);
 if (today.getMonth() == 11 && today.getDate() > 25) {
   countDown.setFullYear(countDown.getFullYear() + 1);
 }
