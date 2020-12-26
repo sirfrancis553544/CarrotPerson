@@ -5,7 +5,6 @@ if (theme == null) {
   setTheme(theme);
 }
 
-
 let themeDots = document.getElementsByClassName("theme-dot");
 
 for (var i = 0; themeDots.length > i; i++) {
@@ -34,8 +33,9 @@ function setTheme(mode) {
 
 var year = new Date();
 
-document.getElementById("thisYear").innerHTML = `<div> <strong>©</strong> ${year.getFullYear()} Daniel Francis</div>`;
-
+document.getElementById(
+  "thisYear"
+).innerHTML = `<div> <strong>©</strong> ${year.getFullYear()} Daniel Francis</div>`;
 
 today = new Date();
 var countDown = new Date(today.getFullYear(), 12, 2);
@@ -44,10 +44,14 @@ if (today.getMonth() == 11 && today.getDate() > 25) {
 }
 var one_day = 1000 * 60 * 60 * 24;
 var days = 99;
-document.getElementById("countdown").innerHTML = `<h1> Day <strong class="red">${Math.ceil(
-  (days - (countDown.getTime() - today.getTime()) / one_day) 
-)}</strong> of my 100 days of coding challenge  <a target="_blank" href="https://github.com/sirfrancis553544/oneHundredDaysOfCoding">
+document.getElementById("countdown").innerHTML = `
+
+// <h1> Day <strong class="red">
+
+//  ${Math.ceil((days - (countDown.getTime() - today.getTime()) / one_day) )}
+
+// </strong> of my 100 days of coding challenge  
+
+<a target="_blank" href="https://github.com/sirfrancis553544/oneHundredDaysOfCoding">
 <i class="fa fa-github" style="font-size: 48px"></i>
 </a></h1>`;
-
-
