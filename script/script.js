@@ -45,8 +45,8 @@ if (today.getMonth() == 11 && today.getDate() > 25) {
 var one_day = 1000 * 60 * 60 * 24;
 var days = 99;
 document.getElementById("countdown").innerHTML = `
-
-Find me on 
+<h1>
+Find me on  </h1>
 
 <a target="_blank" href="https://github.com/sirfrancis553544/oneHundredDaysOfCoding">
 <i class="fa fa-github" style="font-size: 48px"></i>
