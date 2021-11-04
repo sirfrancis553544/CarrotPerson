@@ -1,3 +1,5 @@
+
+
 :root {
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
@@ -45,6 +47,7 @@ h6,
 strong {
   color: var(--mainText);
   font-family: "Russo One", sans-serif;
+  /* font-family: 'VT323', monospace; */
   font-weight: 500;
 }
 
@@ -340,15 +343,15 @@ h6 {
 #social_img {
   width: 100%;
 }
-/* 
-.social-links {
-  align-content: center;
-  text-align: center;
-}
 
+.social-links {
+  padding-top: 80px;
+  align-content: left;
+  text-align: left;
+}
 .social-links a {
   margin: 10%;
-} */
+}
 
 .post-wrapper {
   display: grid;
@@ -357,12 +360,6 @@ h6 {
   justify-content: center;
   padding-bottom: 50px;
 }
-.post {
-  border: 1px solid var(--borderColor);
-  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-}
 .post:hover {
   transform: scale(1.05);
   transition: all ease 100ms;
@@ -370,18 +367,25 @@ h6 {
 }
 .thumbnail {
   width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
+  transition: transform 0.1s;
+
+
+  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+
+}
+
+.thumbnail2 {
+  width: 100%;
   transition: transform 0.1s;
 }
 .post-preview {
-  /* background-color: #fff; */
   padding: 15px;
 }
 
 .post-title {
   color: black;
-  /* color: var(--mainColor); */
   margin: 0;
 }
 
@@ -469,6 +473,130 @@ h6 {
   padding-bottom: 60px;
   color: var(--mainText);
 }
+
+
+
+/* CSS */
+.button-49,
+.button-49:after {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 180px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+
+  letter-spacing: 3px;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+}
+
+
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'OPENSEA';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 1100px) {
   .main-container {
