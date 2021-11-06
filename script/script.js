@@ -8,4 +8,4 @@ var year = new Date();
 
 document.getElementById(
   "thisYear"
-).innerHTML = `<div> <strong>©</strong> ${year.getFullYear()} Carrot Person</div>`;
+).innerHTML = `<div> <strong>©</strong> ${year.getFullYear()} YettieClub</div>`;
