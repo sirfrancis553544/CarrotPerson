@@ -172,7 +172,7 @@ h6 {
   background-color: var(--mainColor);
 }
 
-#navigation a {
+/* #navigation a {
   color: var(--mainText);
 }
 
@@ -185,9 +185,9 @@ h6 {
   display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
-}
+} */
 
-.dots-wrapper {
+/* .dots-wrapper {
   display: flex;
 }
 
@@ -201,8 +201,8 @@ h6 {
 
 #dot-3 {
   background-color: #2aca3e;
-}
-
+} */
+/* 
 .browser-dot {
   background-color: black;
   height: 15px;
@@ -213,9 +213,9 @@ h6 {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-}
+} */
 
-.left-column {
+/* .left-column {
   grid-area: left-column;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -228,14 +228,14 @@ h6 {
   width: 300px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
-}
+} */
 
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.theme-dot {
+/* .theme-dot {
   height: 30px;
   width: 30px;
   background-color: black;
@@ -249,11 +249,11 @@ h6 {
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 
   cursor: pointer;
-}
-
+} */
+/* 
 .theme-dot:hover {
   border-width: 5px;
-}
+} */
 
 #light-mode {
   background-color: #fff;
@@ -336,8 +336,9 @@ h6 {
   padding-bottom: 50px;
   padding-top: 50px;
   gap: 30px;
-  margin: 0 10%;
+  margin: 0 auto;
 }
+
 
 #skills {
   display: flex;
