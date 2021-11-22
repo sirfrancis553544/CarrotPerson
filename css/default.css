@@ -521,12 +521,10 @@ h6 {
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
-
   letter-spacing: 3px;
   outline: transparent;
   position: absolute;
-  justify-content: center;
-  top: 40%;
+  top: 50%;
   left: 40%;
   user-select: none;
 }
