@@ -382,6 +382,12 @@ h6 {
 
 }
 
+.banner{
+  margin-top: 20px;
+  width: 100%;
+  transition: transform 0.1s;
+}
+
 .thumbnail2 {
   width: 100%;
   transition: transform 0.1s;
