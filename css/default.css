@@ -525,6 +525,7 @@ h6 {
   letter-spacing: 3px;
   outline: transparent;
   position: absolute;
+  justify-content: center;
   top: 40%;
   left: 40%;
   user-select: none;
@@ -628,7 +629,6 @@ h6 {
 
 #header{
   background-color: #102040;
-  /* color: #fff; */
   text-align: center;
 }
 
@@ -648,7 +648,6 @@ h6 {
   padding: 0 10px;
 }
 .holy-grail-content {
-  /* color: #777; */
   padding-left: 0;
   padding-right: 0;
  
