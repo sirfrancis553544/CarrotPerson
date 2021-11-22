@@ -481,7 +481,10 @@ h6 {
 }
 
 
-
+.middle{
+  position: relative;
+  width: 100%;
+}
 
 
 /* CSS */
@@ -515,7 +518,9 @@ h6 {
 
   letter-spacing: 3px;
   outline: transparent;
-  position: relative;
+  position: absolute;
+  top: 40%;
+  left: 40%;
   user-select: none;
 }
 
