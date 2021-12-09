@@ -7,7 +7,7 @@
   --borderColor: #c1c1c1;
 
   --mainText: black;
-  --secondaryText: #4b5156;
+  --secondaryText: #3a3a3a;
 
   --themeDotBorder: #24292e;
 
@@ -19,6 +19,7 @@
 
   --success-color: #2ecc71;
   --error-color: #e74c3c;
+  --timeline:#c1c1c1;
 }
 
 html,
@@ -53,7 +54,7 @@ strong {
 
 p,
 li,
-span,
+span, 
 label,
 input,
 textarea {
@@ -131,6 +132,7 @@ h6 {
 
 .s2 {
   background-color: var(--secondaryColor);
+ 
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
@@ -139,6 +141,7 @@ h6 {
   width: 1100px;
   margin: 0 auto;
 }
+
 
 .greeting-wrapper {
   display: grid;
@@ -333,12 +336,16 @@ h6 {
 .about-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  /* padding-top: 50px; */
   gap: 30px;
   margin: 0 auto;
+ 
 }
 
+.team{
+text-align: center;
+}
 
 #skills {
   display: flex;
@@ -350,8 +357,14 @@ h6 {
   width: 100%;
 }
 
+
+.social-link{
+    padding-top: 80px;
+    align-content: left;
+    text-align: left;
+}
 .social-links {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   align-content: left;
   text-align: left;
 }
@@ -482,7 +495,7 @@ h6 {
   gap: 0px;
   justify-content: center;
   text-align: center;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   color: var(--mainText);
 }
 
@@ -513,8 +526,8 @@ h6 {
   min-width: 0px;
   overflow: hidden;
   padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
   text-align: center;
   touch-action: manipulation;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -523,13 +536,13 @@ h6 {
   vertical-align: middle;
   letter-spacing: 3px;
   outline: transparent;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 40%;
   user-select: none;
 }
 
-
+/* 
 
  .button-49:after {
   --slice-0: inset(50% 50% 50% 50%);
@@ -556,11 +569,11 @@ h6 {
 .button-49:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
-}
+} */
 
 
 
-
+/* 
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
@@ -606,7 +619,7 @@ h6 {
     clip-path: var(--slice-1);
     transform: translate(0);
   }
-}
+} */
 
 
 
@@ -941,4 +954,133 @@ h1:nth-child(3) {
     padding: 20px 0 20px;
   }
 }
+
+
+
+/* **********timeline******************** */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:var(--timeline);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: var(--timeline);
+  border: 4px solid var(--timeline);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--timeline);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--timeline);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--timeline);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--timeline) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: var(--timeline);
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid var(--timeline);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--timeline) transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
 
