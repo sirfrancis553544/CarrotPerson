@@ -359,7 +359,7 @@ text-align: center;
 
 
 .social-link{
-    padding-top: 80px;
+    padding-top: 150px;
     align-content: left;
     text-align: left;
 }
@@ -505,6 +505,11 @@ text-align: center;
   width: 100%;
 }
 
+.middle button:hover {
+  transform: scale(1.05);
+  transition: all ease 100ms;
+  cursor: pointer;
+}
 
 /* CSS */
 .button-49,
