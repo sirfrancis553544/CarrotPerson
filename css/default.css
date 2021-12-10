@@ -384,6 +384,8 @@ text-align: center;
   transition: all ease 100ms;
   cursor: pointer;
 }
+
+
 .thumbnail {
   width: 100%;
   transition: transform 0.1s;
@@ -545,13 +547,20 @@ text-align: center;
   top: 50%;
   left: 40%;
   user-select: none;
+  transition: transform .2s; /* Animation */
+
+}
+
+.button-49:hover {
+  transform: scale(1.05);
+  transition: all ease 100ms;
+  cursor: pointer;
 }
 
 
+
 .roadmap{
-
   color: #17a2b8;
-
 }
 /* 
 
