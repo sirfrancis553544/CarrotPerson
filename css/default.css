@@ -337,7 +337,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-bottom: 30px;
-  /* padding-top: 50px; */
+  padding-top: 50px; 
   gap: 30px;
   margin: 0 auto;
  
@@ -515,7 +515,7 @@ text-align: center;
 .button-49,
 .button-49:after {
   align-items: center;
-  background-color: #0A66C2;
+  background-color: #17a2b8;
   border: 0;
   border-radius: 10px;
   box-sizing: border-box;
@@ -958,6 +958,11 @@ h1:nth-child(3) {
     font-size: 12px;
     padding: 20px 0 20px;
   }
+
+  .social-link{
+    padding-top:50px;
+
+}
 }
 
 
