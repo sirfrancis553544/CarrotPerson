@@ -1,123 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
+<head>
 
-    <link rel="stylesheet" href="css/default.css" />
-    <link id="theme-style" rel="stylesheet" href="" />
-    <title>Daniel Francis</title>
-  </head>
-  <body>
-    <section class="s1">
-      <div class="main-container">
-        <div class="greeting-wrapper">
-          <h1>Hi, I'm Daniel Francis</h1>
+  <meta charset="UTF-8" />
 
-          <!-- TODO change font family -->
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carrot Person is a collection of
+                                       8,450 algorithmically generated pieces of art.
+                                       Created by YettieClub">
+  <meta name="keywords" content="Carrot Person, NFT">
+  <meta name="author" content="Yettie Club">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/default.css" />
+  <link id="theme-style" rel="stylesheet" href="" />
+
+  <!-- Animation on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- gallery  -->
+  <style>
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 900px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .dot-pad {
+      padding-bottom: 2%;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+  <!-- gallery  -->
+  <title>Carrot Person</title>
+</head>
+
+<body>
+  <section class="s1">
+    <div class="main-container">
+      <div class="greeting-wrapper">
+        <!-- TODO change font family -->
+        <div id="container">
+          <h1>Carrot Person</h1>
+          <h1>Carrot Person</h1>
+          <h1>Carrot Person</h1>
         </div>
+      </div>
+    </div>
+    <!-- </section> -->
 
-        <div class="intro-wrapper">
-          <div class="nav-wrapper">
-            <div class="dots-wrapper">
-              <div id="dot-1" class="browser-dot"></div>
-              <div id="dot-2" class="browser-dot"></div>
-              <div id="dot-3" class="browser-dot"></div>
-            </div>
 
-            <ul id="navigation">
-              <li><a href="#contact-form">Contact</a></li>
-            </ul>
+    <!-- <section class="s1"> -->
+    <div id="portfolio" class="main-container">
+      <h2 style="text-align: center">COLLECTION</h2>
+      <div class="post-wrapper">
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/442.png" alt="CarrotPerson#442" />
           </div>
-          <div class="left-column">
-            <img 
-              id="profile_pic"
-              src="images/me.png"
-              alt="Picture of Daniel"
-            />
-            <h5 style="text-align: center; line-height: 0">
-              Personalize Theme
-            </h5>
-            <div id="theme-options-wrapper">
-              <div data-mode="light" id="light-mode" class="theme-dot"></div>
-              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-              <div data-mode="green" id="green-mode" class="theme-dot"></div>
-              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-            </div>
-            <p id="settings-note">
-              *Theme settings will be saved for <br />your next visit
-            </p>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/1002.png" alt="CarrotPerson#1002,NFT,YettieClub" srcset=""
+              data-aos="zoom-in" data-aos-duration="1500" />
           </div>
-          <div class="right-column">
-            <div id="preview-shadow">
-              <div id="preview">
-                <div id="corner-tl" class="corner"></div>
-                <div id="corner-tr" class="corner"></div>
-
-                <h3>What I Do</h3>
-                <p>Living far away from home and developing on the go.</p>
-
-                <div id="corner-br" class="corner"></div>
-                <div id="corner-bl" class="corner"></div>
-              </div>
-            </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/4222.png" alt="CarrotPerson#4222,NFT,YettieClub" srcset=""
+              data-aos="zoom-in" data-aos-duration="1500" />
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/1420.png" alt="CarrotPerson#1420,NFT,YettieClub" srcset=""
+              data-aos="zoom-in" data-aos-duration="1500" />
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/8445.png" alt="CarrotPerson#8445,NFT,YettieClub" srcset=""
+              data-aos="zoom-in" data-aos-duration="1500" />
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/8141.png" alt="CarrotPerson#8141,NFT,YettieClub" srcset=""
+              data-aos="zoom-in" data-aos-duration="1500" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- <header>
-      <div id="countdown">
+    </div>
 
+
+    <!-- //! New Collection Section   -->
+    <!-- <div id="portfolio" class="main-container">
+      <h2 style="text-align: center">COLLECTION</h2>
+      <div class="greeting-wrapper">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/442.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/1002.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/4222.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/1420.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/8141.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/8445.png" style="width:100%">
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br>
+        <br>
       </div>
-    </header> -->
+    </div> -->
+
+    </div>
+
+
+
     <section class="s2">
       <div class="main-container">
         <div class="about-wrapper">
           <div id="about" class="about-me">
-            <h4>More about me</h4>
-            <p>
-              Always building something new, and I love to see a plan come
-              together.
-            </p>
-            <p>
-              I'm a Financial Computing Graduate with a background in Accounting
-              that’s interested in fullstack developer with a focus on MERN
-              stack
-              <a href="resume.html">Explore Resume</a>. Would like to be part of a project that interests and challenges me.
-            </p>
-            <h4>TOP EXPERTISE</h4>
-
-            <div id="skills">
-              <ul>
-                <li>JavaScript</li>
-                <li>Light React</li>
-                <li>MongoDb</li>
-                <li>SQL</li>
-                <li>PHP</li>
-                <li>Python</li>
-              </ul>
-              <ul>
-                <li>HTML/CSS</li>
-                <li>Node.js</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Visual Studio</li>
-              </ul>
+            <div class="greeting-wrapper">
+              <h4>
+                <a target="_blank" href="https://opensea.io/collection/carrotperson">
+                  <button class="button-49" role="button">
+                    Buy on OpenSea
+                  </button>
+                </a>
+              </h4>
             </div>
           </div>
+        </div>
+    </section>
 
           <div class="social-links">
             <h4>Projects List</h4>
@@ -126,9 +237,18 @@
               together.
             </p>
             <p>
-              I'm a Financial Computing Graduate with a background in Accounting
-              that’s interested in full stack development. Would love to be a
-              part of a project that interests me.
+              They say when you play with fire you get burnt.
+              <br>The Carrot Universe has collided with ours and now they are here.
+              <br>
+              <br>
+              <br>Unknown to the Carrots one of their own caused this and wants to see this and every other universe
+              destroyed.
+              <br>
+              <br>
+              <br>Help the carrots go back home and save their universe while stopping the mysterious carrot from
+              destroying everything.
+              <br>
+              <br>
             </p>
             <h3>Find me on LinkedIn & GitHub</h3>
 
@@ -215,55 +335,190 @@
          
 
         </div>
-      </div>
+
+
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Project Launch</h2>
+              <li>Create 8450 CarrotPerson</li>
+              <li>Funding Website, Discord & Socials </li>
+              <li>Public Sales on OpenSea</li>
+              <li>Collaborated with <a target="_blank"
+                  href="https://opensea.io/collection/carrotpersonspecial-kc">Kanairo Collective</a> & minted 10 special
+                edition CarrotPerson for them.</li>
+                <li>40% of royalties will be distributed to CarrotPerson holders annually</li>
+            </div>
+          </div>
+          <div class="container right" data-aos="fade-right" data-aos-duration="1500">
+            <div class="content">
+              <h2>Phase 1</h2>
+              <li>Team is recruited for community building. </li>
+              <li>Feedback is gathered, and strategy shaped by community. </li>
+              <li>10% sold wallet with the highest purchase quantity get a free NFT at the end of the year.  </li>
+              <li>85 CarrotPerson will be set aside for giveaways.</li>
+         
+            </div>
+          </div>
+          <div class="container left" data-aos="fade-left" data-aos-duration="1500">
+            <div class="content">
+              <h2>Phase 2</h2>
+              <li>Concentrating on promotion to grow online presence, project attention and floor price.</li>
+              <li>10% of the fund will be spent on advertisements and marketing.</li>
+            </div>
+          </div>
+          <div class="container right" data-aos="fade-right" data-aos-duration="1500">
+            <div class="content">
+              <h2>Phase 3</h2>
+              <li>50% sold Holders are automatically whitelisted for future launches.</li>
+              <li>Exclusive discord channel will be created for owners only to vote on future strategies and goals.
+              </li>
+              <li>10 CarrotPerson will be randomly given away to NFT owners as a thank you for early supporters.  </li>
+            </div>
+          </div>
+          <div class="container left" data-aos="fade-left" data-aos-duration="1500">
+            <div class="content">
+              <h2>Phase 4 </h2>
+              <li>75% sold develops the CarrotPerson comic that tells the story of how they ended up lost in our
+                universe. </li>
+                <li>We will develop a 2D CarrotPerson game with web3 integration</li>
+            </div>
+          </div>
+          <div class="container right" data-aos="fade-right" data-aos-duration="1500">
+            <div class="content">
+              <h2>Phase 5 </h2>
+              <li>100% sold CarrotPerson holders merch store will be launched. </li>
+              <li>Comic NFT giveaway.</li>
+            </div>
+          </div>
+        </div>
+        <div id="about" class="about-me">
+          <div class="greeting-wrapper">
+            <p>We are open to feedback and your creative ideas; you are welcome to share it on our discord. </p>
+          </div>
+        </div>
     </section>
+
+
+    <!-- //! Partners  -->
     <section class="s2">
       <div id="contact" class="main-container">
-        <a href=""></a>
-        <h3 style="text-align: center">Get In Touch</h3>
-      
-        <form id="contact-form" class="form" data-netlify="true">
-          <a name="contact"></a>
-
-          <div class="form-control">
-            <label>Name</label>
-            <input class="input-field" id="name" type="text" name="name" required/>
-            <small>Error message</small>
-          </div>
-
-          <div class="form-control">
-            <label>Subject</label>
-            <input class="input-field" id="subject" type="text" name="subject" required/>
-            <small>Error message</small>
-          </div>
-
-          <div class="form-control">
-            <label>Email</label>
-            <input class="input-field" id="email" type="text" name="email" required/>
-            <small>Error message</small>
-          </div>
-
-          <div class="form-control">
-            <label>Message</label>
-            <textarea class="input-field" id="message" name="message" required></textarea>
-            <small>Error message</small>
-          </div>
-
-          <input id="submit-btn" type="submit" value="Send" />
-        </form>
+        <h4>Featured On</h4>
+        <div class="partner">
+            <a href="https://nftcalendar.io/event/carrotperson/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/nftcalendar-logo.svg" alt="nft-calendar-log">
+          </a>
+          <a href="https://notfin.com/carrotperson/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/symbol-black-notfin.svg" alt="notfin-log">
+          </a>
+          <a href="https://upcomingnft.net/event/carrotperson" target="_blank" rel="noopener noreferrer">
+            <img src="/images/upcomingnft-maillogo-b.png" alt="upcomingnft-log">
+          </a>
+        </div>
       </div>
     </section>
+
+    <!-- <section class="s2">
+          <div class="main-container">
+            <div class="about-wrapper">
+              <div id="about" class="about-me">
+                <h4>Team</h4>
+                <img
+                      class="thumbnail2"
+                      src="images/00.png"
+                      alt="CarrotPerson#00,NFT,YettieClub"
+                    />
+              </div>
+              <div class="social-links">
+                <h2>Head carrot</h2>
+                <p>
+                  Jack of all trades and first to make contact with the carrot verse. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>  -->
+
+
+
+    <section class="s2">
+      <div class="main-container">
+        <h2 class="team">Team</h2>
+        <div class="about-wrapper">
+          <div id="about" class="about-me">
+            <h4 class="team">Head Carrot</h4>
+            <img class="thumbnail2" src="images/00.png" alt="CarrotPerson#00,NFT,YettieClub" data-aos="zoom-in"
+              data-aos-duration="1500" />
+            <p>
+              Jack of all trades, designer and developer.
+            </p>
+          </div>
+          <div class="about-me">
+            <h4 class="team">PR</h4>
+            <img class="thumbnail2" src="images/000.png" alt="CarrotPerson#00,NFT,YettieClub" data-aos="zoom-in"
+              data-aos-duration="1500" />
+            <p>
+              Developer, Likes hiking and has a terrible twitter addiction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <div class="greeting-wrapper">
+          <div>
+            <div class="middle"> -->
+    <!-- <img class="banner" src="images/group.png" alt="group,YettieClub,CarrotPerson" srcset="" />  -->
+    <!-- </div>
+          </div>
+          </div>   -->
+
+<!-- //! FAQ -->
+
+<!-- <section class="s2">
+  <div class="main-container">
+    <div class="about-wrapper">
+      <div id="about" class="about-me"> -->
+        <!-- //! section -->
+    
+          
+      <!-- //! section end -->
+    <!-- </div>
+  </div>
+</div>
+</section> -->
+<!-- //! end -->
+
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <div id="about" class="about-me">
+            <div class="greeting-wrapper">
+              <h2>Verified Contract</h2>
+              <p>
+                <a target="_blank"
+                  href="https://polygonscan.com/token/0x3b9ca0f67260adadc4e0d4650c52fe4630b11a7a">0x3b9ca0f67260adadc4e0d4650c52fe4630b11a7a</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
     <section class="s1">
       <div class="main-container">
         <strong>
           <div class="footer">
             <div><a href="#about">About</a></div>
-            <div><a href="#portfolio">Portfolio</a></div>
+            <div><a target="_blank" href="https://opensea.io/collection/carrotperson">OpenSea</a></div>
             <div>
-              <a target="_blank" href="https://www.linkedin.com/in/daniel-francis-nF1t/">LinkedIn</a>
+              <a target="_blank" href="https://discord.gg/grUEnM23">Discord</a>
             </div>
             <div>
-              <a target="_blank"  href="https://github.com/sirfrancis553544">GitHub</a>
+              <a target="_blank" href="https://twitter.com/CarrotPersonYC">Twitter</a>
             </div>
           </div>
         </strong>
@@ -273,6 +528,35 @@
       </div>
     </section>
     <script src="script/script.js"></script>
-    <script src="script/validation.js"</script></script>
-  </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script/validation.js"></script>
+
+    <script>
+    
+
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+</body>
+
 </html>
